@@ -9,16 +9,23 @@
 </head>
 <body>
   <main>
-    <a href="." class="back-link">&larr; Back to BEU</a>
+    <a href="/" class="back-link">&larr; Back to BEU</a>
 
     <h1>Terms of Use</h1>
-    <p class="effective-date">Effective Date: March 14, 2026</p>
+    <p class="effective-date">Effective Date: April 3, 2026</p>
 
     <h2>1. Acceptance of Terms</h2>
     <p>By accessing or using BEU ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
 
     <h2>2. Description of Service</h2>
     <p>BEU is a skincare routine tracking application that helps you organize, schedule, and monitor your daily skincare routines. The App allows you to create routines, add skincare products, track steps, and monitor your consistency over time.</p>
+    <p>BEU also provides optional AI-powered features, including:</p>
+    <ul>
+      <li><strong>AI Product Scanner:</strong> Scan skincare product labels using your camera to identify ingredients, detect potential ingredient conflicts, and receive usage tips.</li>
+      <li><strong>AI Skin Analysis:</strong> Upload a photo of your face to receive a general assessment of your skin type and personalized skincare recommendations.</li>
+      <li><strong>AI Routine Analysis:</strong> Receive AI-generated suggestions to improve your current skincare routine based on your existing steps and products.</li>
+    </ul>
+    <p>All AI features are powered by third-party AI models (see Section 5) and are subject to the disclaimers in Section 9.</p>
 
     <h2>3. Eligibility</h2>
     <p>You must be at least 13 years of age to use BEU. By using the App, you represent and warrant that you meet this age requirement. If you are under 18, you should review these Terms with a parent or guardian.</p>
@@ -27,7 +34,13 @@
     <p>To use BEU, you must sign in using Google Sign-In or Apple Sign-In. You are responsible for maintaining the security of your authentication credentials and for all activity that occurs under your account. You agree to notify us immediately of any unauthorized use of your account.</p>
 
     <h2>5. Third-Party Services</h2>
-    <p>The App relies on third-party authentication providers including Apple Sign-In, Google Sign-In, and Firebase Authentication. These services are governed by their own terms and privacy policies. BEU is not responsible for the practices or availability of these services.</p>
+    <p>The App relies on third-party services including:</p>
+    <ul>
+      <li><strong>Authentication:</strong> Apple Sign-In, Google Sign-In, and Firebase Authentication for user account management.</li>
+      <li><strong>Data Storage:</strong> Firebase Firestore and Firebase Storage (Google LLC) for storing user-generated content.</li>
+      <li><strong>AI Processing:</strong> Firebase AI Logic powered by Google Gemini (Google LLC) for processing photos and text submitted through the App's AI features, including product scanning, skin analysis, and routine analysis. When you use AI features, your photos and/or text data are transmitted to Google's servers for processing by AI models.</li>
+    </ul>
+    <p>These services are governed by their own terms and privacy policies. BEU is not responsible for the practices, availability, or accuracy of these third-party services.</p>
 
     <h2>6. Acceptable Use</h2>
     <p>BEU is provided for personal, non-commercial use only. You agree not to:</p>
@@ -38,41 +51,72 @@
       <li>Attempt to gain unauthorized access to the App or its related systems</li>
       <li>Use the App to transmit any harmful, offensive, or objectionable content</li>
       <li>Reproduce, distribute, or create derivative works based on the App</li>
+      <li>Use the AI features to process images or content that you do not have the right to use</li>
     </ul>
 
     <h2>7. Intellectual Property</h2>
     <p>The App, including its design, graphics, interface, code, and content (excluding user-generated content), is owned by BEU and is protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App in accordance with these Terms.</p>
 
     <h2>8. User Content</h2>
-    <p>You retain ownership of any content you create within the App, such as profile photos and routine data. By uploading a profile photo, you grant BEU a limited license to display that image within the App solely for the purpose of personalizing your experience. Your routine data is stored locally on your device and is not transmitted to our servers.</p>
+    <p>You retain ownership of any content you create within the App, such as profile photos and routine data. By uploading a profile photo, you grant BEU a limited license to display that image within the App solely for the purpose of personalizing your experience. Profile photos you upload are stored locally on your device. Your routine data, including routines, steps, products, and completion history, is stored in Firebase Cloud Firestore (operated by Google LLC) and associated with your user account.</p>
 
-    <h2>9. Health Disclaimer</h2>
-    <p>BEU is a routine tracking tool and does NOT provide medical advice, diagnosis, or treatment. The information and features provided by the App are for informational and organizational purposes only. Always consult a qualified dermatologist or healthcare professional before making decisions about your skincare or health. BEU is not responsible for any adverse effects resulting from skincare routines tracked through the App.</p>
+    <h2>9. AI Features &amp; Health Disclaimer</h2>
+
+    <p><strong>a) General Health Disclaimer</strong></p>
+    <p>BEU is a routine tracking tool and does NOT provide medical advice, diagnosis, or treatment. The information and features provided by the App are for informational and organizational purposes only. Always consult a qualified dermatologist or healthcare professional before making decisions about your skincare or health.</p>
+
+    <p><strong>b) AI Features Disclaimer</strong></p>
+    <p>The AI-powered features in BEU, including product scanning, skin analysis, and routine analysis, are provided <strong>strictly for informational and educational purposes only</strong>. By using these features, you acknowledge and agree that:</p>
+    <ul>
+      <li>AI-generated results, recommendations, and analyses are <strong>NOT medical, dermatological, or professional advice</strong> and should not be treated as such.</li>
+      <li>AI may produce <strong>inaccurate, incomplete, outdated, or erroneous</strong> results. AI models can make mistakes, misidentify ingredients, or provide inappropriate recommendations.</li>
+      <li>You should <strong>NOT rely on AI-generated recommendations</strong> when making decisions about your health, skincare treatments, or product usage.</li>
+      <li>AI skin analysis is <strong>NOT a medical diagnosis</strong> and cannot replace a professional examination by a qualified dermatologist or healthcare provider.</li>
+      <li>Ingredient information provided by AI may be <strong>inaccurate or incomplete</strong> — always verify ingredient lists by reading the product packaging directly.</li>
+      <li>AI does not account for your <strong>individual allergies, sensitivities, medical conditions, medications, pregnancy, breastfeeding</strong>, or other personal health factors that may affect product safety or suitability.</li>
+      <li>Ingredient conflict detection is based on general guidelines and may <strong>not reflect your specific situation</strong> — always consult a professional for personalized advice.</li>
+      <li>You should <strong>always consult a qualified dermatologist or healthcare professional</strong> before starting, modifying, or discontinuing any skincare routine or treatment.</li>
+    </ul>
+
+    <p><strong>c) Assumption of Risk</strong></p>
+    <p>You use AI features entirely at your own risk. BEU, its developer, and its affiliates shall <strong>not be held liable</strong> for any adverse effects, allergic reactions, skin irritation, health complications, or any other consequences — whether direct, indirect, or consequential — arising from or related to your use of or reliance on AI-generated recommendations, analyses, or information provided by the App.</p>
 
     <h2>10. Disclaimers &amp; Limitation of Liability</h2>
     <p class="legal-caps">The App is provided "as is" and "as available" without warranties of any kind, whether express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+    <p class="legal-caps">Without limiting the foregoing, BEU makes no warranties or representations about the accuracy, reliability, completeness, or timeliness of any AI-generated content, recommendations, ingredient analyses, skin assessments, or routine suggestions provided through the App.</p>
     <p class="legal-caps">To the fullest extent permitted by applicable law, BEU shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
     <p class="legal-caps">(a) your use of or inability to use the App;<br>
     (b) any unauthorized access to or use of your data;<br>
-    (c) any third-party services used in connection with the App.</p>
+    (c) any third-party services used in connection with the App;<br>
+    (d) any AI-generated content, recommendations, analyses, or information provided through the App, including but not limited to ingredient identification, conflict detection, skin analysis results, and routine suggestions;<br>
+    (e) any decisions you make or actions you take based on information provided by the App's AI features.</p>
     <p class="legal-caps">In no event shall BEU's total liability to you for all claims arising out of or relating to the use of the App exceed the greater of:</p>
     <p class="legal-caps">(a) the amount you paid for the App in the last 12 months; or<br>
     (b) ten (10) US dollars.</p>
     <p class="legal-caps">If you have not made any payments to BEU, your sole remedy is to stop using the App.</p>
 
-    <h2>11. Termination</h2>
+    <h2>11. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless BEU, its developer, affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable attorney's fees) arising out of or in any way connected with:</p>
+    <ul>
+      <li>Your use of or reliance on AI-generated recommendations, analyses, or information provided by the App</li>
+      <li>Your violation of these Terms</li>
+      <li>Your violation of any rights of a third party</li>
+      <li>Any content you submit or upload through the App</li>
+    </ul>
+
+    <h2>12. Termination</h2>
     <p>We reserve the right to suspend or terminate your access to the App at any time, with or without cause, and with or without notice. Upon termination, your right to use the App will immediately cease. Provisions of these Terms that by their nature should survive termination will remain in effect.</p>
 
-    <h2>12. Changes to Terms</h2>
+    <h2>13. Changes to Terms</h2>
     <p>We may update these Terms from time to time. When we make changes, we will update the "Effective Date" above and notify you through the App. Your continued use of the App after the changes take effect constitutes your acceptance of the revised Terms.</p>
 
-    <h2>13. Governing Law</h2>
+    <h2>14. Governing Law</h2>
     <p>These Terms shall be governed and interpreted in accordance with the laws of the jurisdiction in which the developer operates, without regard to conflict of law principles.</p>
 
-    <h2>14. Entire Agreement</h2>
+    <h2>15. Entire Agreement</h2>
     <p>These Terms constitute the entire agreement between you and BEU regarding the use of the App and supersede any prior agreements or understandings.</p>
 
-    <h2>15. Contact</h2>
+    <h2>16. Contact</h2>
     <p>If you have questions about these Terms of Use, please contact us at:</p>
     <p><a href="mailto:support@beu.app">support@beu.app</a></p>
   </main>
